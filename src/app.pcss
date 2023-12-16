@@ -27,6 +27,14 @@
 		font-weight: theme('fontWeight.bold');
 	}
 
+	h1 {
+		text-align: center;
+		font-size: theme('fontSize.5xl');
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: theme('spacing.8');
+	}
+
 	.btn {
 		display: flex;
 		width: fit-content;
@@ -43,5 +51,12 @@
 			background-color: theme('colors.slate.600');
 			color: theme('colors.green.400');
 		}
+	}
+
+	main {
+		margin-inline: auto;
+		width: 100%;
+		max-width: theme('maxWidth.5xl');
+		padding: theme('spacing.14') theme('spacing.4') 0;
 	}
 }
