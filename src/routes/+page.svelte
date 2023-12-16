@@ -40,5 +40,6 @@
 	<ol class="list-outside list-decimal font-serif text-3xl">
 		{@render link({ href: 'tally-dashboard', text: 'Tally Dashboard' })}
 		{@render link({ href: 'cookie-counter', text: 'Cookie Counter' })}
+		{@render link({ href: 'jingle-bell-balancer', text: 'Jingle Bell Balancer' })}
 	</ol>
 </main>

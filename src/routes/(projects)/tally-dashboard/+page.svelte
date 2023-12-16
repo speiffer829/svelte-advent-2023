@@ -109,7 +109,7 @@
 	}
 
 	.active_btn {
-		background-color: theme('colors.green.800');
-		color: theme('colors.green.300');
+		background-color: theme('colors.green.400');
+		color: theme('colors.slate.800');
 	}
 </style>
