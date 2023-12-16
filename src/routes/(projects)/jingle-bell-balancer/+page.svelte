@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Donut from '$lib/Donut.svelte';
+	import { scale } from 'svelte/transition';
 
 	type Kid = {
 		name: string;
@@ -38,7 +39,13 @@
 	<div class="grid gap-8 md:grid-cols-3 lg:grid-cols-5">
 		<aside class="relative lg:col-span-2">
 			<div class="sticky top-4 text-center">
-				<div class="mx-auto w-fit">
+				<div
+					class="mx-auto w-fit"
+					class:text-green-400={progress < 50}
+					class:text-amber-400={progress >= 50 && progress <= 80}
+					class:text-red-400={progress > 80 && progress < 100}
+					class:text-sky-400={progress === 100}
+				>
 					<Donut size={'200'} {progress} />
 				</div>
 				<p class="mt-5 text-3xl">
@@ -47,6 +54,14 @@
 				<p class="mt-5 text-2xl">
 					{Math.round(100 - total_weight)}kg remaining
 				</p>
+
+				{#if chosen_kids.length}
+					<button
+						class="btn mx-auto mt-5"
+						transition:scale={{ duration: 250 }}
+						onclick={() => (chosen_kids = [])}>Reset</button
+					>
+				{/if}
 			</div>
 		</aside>
 		<section class="md:col-span-2 lg:col-span-3">

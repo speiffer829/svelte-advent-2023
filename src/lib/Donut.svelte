@@ -37,6 +37,6 @@
 	}
 
 	.progress-circle {
-		stroke: var(--progress-color, theme('colors.green.400'));
+		stroke: var(--progress-color, currentColor);
 	}
 </style>
