@@ -1,5 +1,13 @@
-import type { PageLoad } from './$types';
+export const load: PageLoad = async () => {
+	try {
+		const req = await fetch('https://advent.sveltesociety.dev/data/2023/day-one.json');
+		if (!req.ok) throw new Error('oh snap!');
+		const kids = await req.json();
 
-export const load = (async () => {
-	return {};
-}) satisfies PageLoad;
+		return {
+			kids
+		};
+	} catch (error) {
+		console.error('oh snap!', error);
+	}
+};

@@ -2,7 +2,7 @@
 	<a
 		href="/"
 		title="go back"
-		class="group flex w-fit gap-2 rounded-2xl p-4 transition-colors hover:bg-slate-600 hover:text-green-400"
+		class="group mb-6 flex w-fit gap-2 rounded-2xl p-4 transition-colors hover:bg-slate-600 hover:text-green-400"
 	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

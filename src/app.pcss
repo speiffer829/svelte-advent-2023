@@ -26,4 +26,21 @@
 		font-family: theme('fontFamily.serif');
 		font-weight: theme('fontWeight.bold');
 	}
+
+	.btn {
+		display: flex;
+		width: fit-content;
+		gap: theme('spacing.2');
+		background-color: theme('colors.slate.800');
+		color: theme('colors.slate.400');
+		padding: theme('spacing.4') theme('spacing.8');
+		border-radius: theme('borderRadius.2xl');
+		cursor: pointer;
+		transition: all 300ms;
+
+		&:hover {
+			background-color: theme('colors.slate.600');
+			color: theme('colors.green.400');
+		}
+	}
 }
