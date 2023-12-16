@@ -32,12 +32,13 @@
 
 {#snippet link({ href, text })}
 	<li>
-		<a {href} class=" transition-colors hover:text-green-400" title={text}>{text}</a>
+		<a {href} class="block py-4 transition-colors hover:text-green-400" title={text}>{text}</a>
 	</li>
 {/snippet}
 
 <main class="mx-auto max-w-4xl px-4 pt-16">
-	<ol class="list-inside list-decimal font-serif text-3xl">
+	<ol class="list-outside list-decimal font-serif text-3xl">
 		{@render link({ href: 'tally-dashboard', text: 'Tally Dashboard' })}
+		{@render link({ href: 'cookie-counter', text: 'Cookie Counter' })}
 	</ol>
 </main>
