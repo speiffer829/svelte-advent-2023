@@ -2,6 +2,10 @@
 	let foo = $state('bar');
 </script>
 
+<svelte:head>
+	<title>Spenser's Svelte Advent 2023</title>
+</svelte:head>
+
 <header class="mx-auto max-w-4xl px-4 pt-16 text-green-400">
 	<svg
 		class="mx-auto"
@@ -37,9 +41,13 @@
 {/snippet}
 
 <main class="mx-auto max-w-4xl px-4 pt-16">
-	<ol class="list-outside list-decimal font-serif text-3xl">
+	<ol class="list-outside list-decimal pl-6 font-serif text-3xl">
 		{@render link({ href: 'tally-dashboard', text: 'Tally Dashboard' })}
 		{@render link({ href: 'cookie-counter', text: 'Cookie Counter' })}
 		{@render link({ href: 'jingle-bell-balancer', text: 'Jingle Bell Balancer' })}
+		{@render link({
+			href: 'santas-heart-rate-monitor',
+			text: "Santa's Heart Rate Monitor (SHRM™)"
+		})}
 	</ol>
 </main>
