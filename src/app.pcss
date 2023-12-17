@@ -29,10 +29,50 @@
 
 	h1 {
 		text-align: center;
-		font-size: theme('fontSize.5xl');
+		font-size: theme('fontSize.3xl');
 		font-weight: bold;
 		text-transform: uppercase;
 		margin-bottom: theme('spacing.14');
+		position: relative;
+		--line-offset: -20px;
+
+		@screen md {
+			font-size: theme('fontSize.4xl');
+			--line-offset: -20px;
+		}
+
+		@screen lg {
+			font-size: theme('fontSize.5xl');
+			--line-offset: -30px;
+			margin-bottom: theme('spacing.20');
+		}
+
+		/* &::before {
+			content: '';
+			position: absolute;
+			top: var(--line-offset);
+			left: 50%;
+			transform: translateX(-50%);
+			width: 150px;
+			height: 2px;
+			background-color: theme('colors.green.400');
+		} */
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: var(--line-offset);
+			left: 50%;
+			transform: translateX(-50%);
+			width: 70px;
+			height: 5px;
+			background-color: theme('colors.green.400');
+			border-radius: 9999px;
+
+			@screen md {
+				height: 10px;
+			}
+		}
 	}
 
 	.btn {

@@ -35,7 +35,7 @@
 
 <svelte:window onkeydown={handle_keydown} />
 <main>
-	<h1 class="text-center text-5xl font-bold uppercase">Tally Dashboard</h1>
+	<h1 class="">Cookie Counter</h1>
 	<div class="flex items-center justify-center gap-4">
 		<button
 			class="btn text-3xl"

@@ -49,5 +49,6 @@
 			href: 'santas-heart-rate-monitor',
 			text: "Santa's Heart Rate Monitor (SHRM™)"
 		})}
+		{@render link({ href: 'elf-productivity-monitor', text: 'Elf Productivity Monitor' })}
 	</ol>
 </main>

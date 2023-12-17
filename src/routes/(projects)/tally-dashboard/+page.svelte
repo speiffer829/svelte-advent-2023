@@ -53,8 +53,8 @@
 	}
 </script>
 
-<main class="mx-auto w-full max-w-5xl px-4 py-14">
-	<h1 class="text-center text-5xl font-bold uppercase">Tally Dashboard</h1>
+<main class="">
+	<h1 class="">Tally Dashboard</h1>
 
 	<input
 		type="search"
