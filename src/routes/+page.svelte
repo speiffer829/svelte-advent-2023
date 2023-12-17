@@ -41,6 +41,7 @@
 {/snippet}
 
 <main class="mx-auto max-w-4xl px-4 pt-16">
+	<a href="/golf-score" class="btn">Golf</a>
 	<ol class="list-outside list-decimal pl-6 font-serif text-3xl">
 		{@render link({ href: 'tally-dashboard', text: 'Tally Dashboard' })}
 		{@render link({ href: 'cookie-counter', text: 'Cookie Counter' })}
