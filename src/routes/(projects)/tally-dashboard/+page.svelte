@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { untrack } from 'svelte';
 	import { flip } from 'svelte/animate';
+	import { fly, scale, slide } from 'svelte/transition';
 
 	let { data } = $props();
 
@@ -84,6 +85,7 @@
 			<li
 				class="group mb-4 flex items-center rounded-3xl bg-slate-800 p-4 text-xl text-red-400"
 				class:good-kid={kid.tally >= 0}
+				animate:flip={{ duration: 500 }}
 			>
 				<span class="flex-1">{kid.name}</span>
 				<span

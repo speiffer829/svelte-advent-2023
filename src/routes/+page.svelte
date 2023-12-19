@@ -41,7 +41,6 @@
 {/snippet}
 
 <main class="mx-auto max-w-4xl px-4 pt-16">
-	<a href="/golf-score" class="btn">Golf</a>
 	<ol class="list-outside list-decimal pl-6 font-serif text-3xl">
 		{@render link({ href: 'tally-dashboard', text: 'Tally Dashboard' })}
 		{@render link({ href: 'cookie-counter', text: 'Cookie Counter' })}
@@ -51,5 +50,7 @@
 			text: "Santa's Heart Rate Monitor (SHRM™)"
 		})}
 		{@render link({ href: 'elf-productivity-monitor', text: 'Elf Productivity Monitor' })}
+		{@render link({ href: 'metronome', text: 'Mistletoe Metronome' })}
+		{@render link({ href: 'morse-code-translator', text: 'Morse Code Translator' })}
 	</ol>
 </main>
