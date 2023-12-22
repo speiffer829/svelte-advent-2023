@@ -52,5 +52,6 @@
 		{@render link({ href: 'elf-productivity-monitor', text: 'Elf Productivity Monitor' })}
 		{@render link({ href: 'metronome', text: 'Mistletoe Metronome' })}
 		{@render link({ href: 'morse-code-translator', text: 'Morse Code Translator' })}
+		{@render link({ href: 'deck-of-doubles', text: 'Deck Of Doubles' })}
 	</ol>
 </main>
