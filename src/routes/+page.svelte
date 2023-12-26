@@ -53,5 +53,22 @@
 		{@render link({ href: 'metronome', text: 'Mistletoe Metronome' })}
 		{@render link({ href: 'morse-code-translator', text: 'Morse Code Translator' })}
 		{@render link({ href: 'deck-of-doubles', text: 'Deck Of Doubles' })}
+		{@render link({ href: 'day-9', text: 'Countdown' })}
+		{@render link({ href: 'day-10', text: 'Greetings Popup' })}
+		{@render link({ href: 'day-11', text: 'Elf Name Generator' })}
+		{@render link({ href: 'day-12', text: 'TBD' })}
+		{@render link({ href: 'day-13', text: 'TBD' })}
+		{@render link({ href: 'day-14', text: 'TBD' })}
+		{@render link({ href: 'day-15', text: 'TBD' })}
+		{@render link({ href: 'day-16', text: 'TBD' })}
+		{@render link({ href: 'day-17', text: 'TBD' })}
+		{@render link({ href: 'day-18', text: "Santa's Quiz" })}
+		{@render link({ href: 'day-19', text: 'TBD' })}
+		{@render link({ href: 'day-20', text: 'TBD' })}
+		{@render link({ href: 'day-21', text: 'TBD' })}
+		{@render link({ href: 'day-22', text: 'TBD' })}
+		{@render link({ href: 'day-23', text: 'TBD' })}
+		{@render link({ href: 'day-24', text: 'TBD' })}
+		{@render link({ href: 'day-25', text: 'TBD' })}
 	</ol>
 </main>

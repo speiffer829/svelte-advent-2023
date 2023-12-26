@@ -41,8 +41,6 @@
 			_kids = [...kids];
 		}
 
-		console.log(kids);
-
 		if (search_value === '') {
 			return _kids;
 		}
